@@ -1,6 +1,7 @@
 package com.thread;
 
 import android.app.Activity;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.ActionMode;
 import android.view.Menu;
@@ -103,5 +104,43 @@ public class MyActivity extends Activity {
     public void onDestroyActionMode(ActionMode mode)
     {
     }
+//////////////////////////////////////////////////////////////////////////////////inner class async demo/background thread
+    private class GenDownloader extends AsyncTask<CharSequence,CharSequence,CharSequence>
+    {
+        //for this to workc orrectly, it needs to implement the abstracted method+ following 4. not sure why the other 4 are not
+        //abstracted methods since they have nothing on asyncTask.java
 
+        protected void onPreExecute()
+        {
+
+        }
+
+        //... is variable arguments/  acts like parameter arrays in C#(params keyword) similar pattern
+        //The three periods after the final parameter's type indicate that the final argument
+        // may be passed as an array or as a sequence of arguments // was not taught in my java classes ;\
+        @Override
+        protected CharSequence doInBackground(CharSequence... params)
+        {
+           //must also call publishProgress()  or ui thread will not be able to communicate with background thread
+            return null;
+        }
+
+
+
+        protected void onProgressUpdate(CharSequence...status)
+        {
+            // publishProgress() calls it
+
+        }
+
+        protected void onPostExecute(CharSequence status)
+        {
+            //called on final res
+        }
+
+        protected void onCancelled()
+        {
+            //called when cancelled
+        }
+    }
 }
