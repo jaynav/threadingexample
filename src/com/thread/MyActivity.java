@@ -3,11 +3,8 @@ package com.thread;
 import android.app.Activity;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.view.ActionMode;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.AdapterView;
+import android.view.*;
+import android.widget.*;
 
 public class MyActivity extends Activity {
     /**
@@ -18,6 +15,21 @@ public class MyActivity extends Activity {
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+        // request a progress bar
+        requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
+
+        urlTextTest = (EditText)findViewById(R.id.editText);
+        statusTextTest= (TextView)findViewById(R.id.textView);
+        downloadButton = (Button)findViewById(R.id.button);
+        stopButton = (Button)findViewById(R.id.button2);
+       progressBarTest = (ProgressBar)findViewById(R.id.progressBar);
+        goSlowCBX = (CheckBox)findViewById(R.id.checkBox);
+        /*
+
+    private ProgressBar progressBarTest;
+
+    private CheckBox goSlow;*/
+
     }
 
     //on resume goes here
@@ -142,5 +154,25 @@ public class MyActivity extends Activity {
         {
             //called when cancelled
         }
+
+        ///////////////////////////////////////////////////////////////////////////////////clickable buttons
+        public void startDownloadT(View derView)
+        {
+
+        }
+
+        public void stopDownloadT(View view)
+        {
+
+        }
+
     }
+
+    private EditText urlTextTest;
+    private TextView statusTextTest;
+    private Button downloadButton, stopButton;
+    private ProgressBar progressBarTest;
+    private GenDownloader downloader;
+    private CheckBox goSlowCBX;
+
 }
