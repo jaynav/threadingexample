@@ -7,10 +7,10 @@ import com.thread.MyActivity.GenDownloader;
  */
 public class ClickEngine
 {
-    public static void startTask(Editable text, GenDownloader downloader)
+    public static void startTask(CharSequence text, GenDownloader downloader)
     {
 
-
+        //runs async execute which calls doinbackground
         downloader.execute(text);
     }
     

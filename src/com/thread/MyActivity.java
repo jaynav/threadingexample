@@ -6,6 +6,11 @@ import android.os.Bundle;
 import android.view.*;
 import android.widget.*;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.URL;
+import java.net.URLConnection;
+
 public class MyActivity extends Activity {
     /**
      * Called when the activity is first created.
@@ -127,17 +132,96 @@ public class MyActivity extends Activity {
 
         protected void onPreExecute()
         {
-
+            //run ui thread first on setup. grab state of chbx
+            goSlow = goSlowCBX.isChecked();
         }
 
         //... is variable arguments/  acts like parameter arrays in C#(params keyword) similar pattern
         //The three periods after the final parameter's type indicate that the final argument
         // may be passed as an array or as a sequence of arguments // was not taught in my java classes ;\
         @Override
-        protected CharSequence doInBackground(CharSequence... params)
+        protected CharSequence doInBackground(CharSequence... urlParams)
         {
            //must also call publishProgress()  or ui thread will not be able to communicate with background thread
-            return null;
+            //run on background//no ui interface here//indirect ui call
+
+            String stat = "";
+            int tSize =0;
+            //needed to read from file stream or network
+            InputStream inStream = null;
+            long startTime = System.currentTimeMillis();
+            long lastT = startTime;
+
+            //Thrown when a waiting thread is activated before the condition it was waiting for has been satisfied.
+            try
+            {
+                URL derUrl = new URL(urlParams[0].toString());
+                URLConnection connectInternet = derUrl.openConnection();
+                connectInternet.setConnectTimeout(1000);
+                connectInternet.connect();
+
+                inStream = connectInternet.getInputStream();
+
+                //read and discard counter
+                byte[] readBuffer = new byte[1024];
+                int length;
+
+                while ((length = inStream.read(readBuffer,0,readBuffer.length))!= -1)
+                {
+                    tSize+= length;
+                    long rightnow = System.currentTimeMillis();
+                    //to slow down internet connection
+                    if(goSlow)
+                    {
+                        Thread.sleep(100);
+                    }
+
+                    //update the ui
+                    if((rightnow -lastT) >= 250)
+                    {
+                        publishProgress(ClickEngine.textStatus(tSize,rightnow-startTime));
+                    }
+                    stat ="done loading";
+                }
+            }
+            catch(InterruptedException ex)
+            {
+                stat= "there was the following interruption: "+ ex.getMessage();
+            }
+            catch (IOException ex)
+            {
+                stat= "there was the following network error: " + ex.getMessage();
+
+            }
+            catch(SecurityException ex)
+            {
+                stat="there was a security execption" + ex.getMessage();
+            }
+            finally
+            {
+                try
+                {
+                    if(inStream != null)
+                    {
+                        inStream.close();
+                    }
+
+                }
+                catch (IOException ignore)
+                {
+                    stat= "Network error occurred when closing : " + ignore.getMessage();
+                }
+            }
+
+            if (stat.equals("done loading"))
+            {
+                return stat + ClickEngine.textStatus(tSize, System.currentTimeMillis()-startTime);
+            }
+            else
+            {
+                return stat;
+            }
+
         }
 
 
@@ -145,19 +229,28 @@ public class MyActivity extends Activity {
         protected void onProgressUpdate(CharSequence...status)
         {
             // publishProgress() calls it
+            //push data to UI
+            statusTextTest.setText(status[0]);
 
         }
 
         protected void onPostExecute(CharSequence status)
         {
-            //called on final res
+            //called on final result/ui update
+
+            setUIR(false);
+            statusTextTest.setText(status);
+            downloader =null;
         }
 
         protected void onCancelled()
         {
+         statusTextTest.setText("was cancelled");
+         downloader = null;
             //called when cancelled
         }
-
+        //to slow connection speed
+        private boolean goSlow;
 
     }
 
@@ -167,7 +260,7 @@ public class MyActivity extends Activity {
         //ui update call
         setUIR(true);
         downloader = new GenDownloader();
-        ClickEngine.startTask(urlTextTest.getText(),downloader);
+        ClickEngine.startTask(UrlCheck.isUrlCorrect(urlTextTest.getText()),downloader);
         statusTextTest.setText("started download of" +urlTextTest.getText());
     }
 
