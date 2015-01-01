@@ -14,9 +14,11 @@ public class MyActivity extends Activity {
     public void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
-        // request a progress bar
+
+        // request a progress bar// has to be called before adding content
         requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
+
+        setContentView(R.layout.main);
 
         urlTextTest = (EditText)findViewById(R.id.editText);
         statusTextTest= (TextView)findViewById(R.id.textView);
@@ -44,6 +46,7 @@ public class MyActivity extends Activity {
     public void onPause()
     {
         super.onPause();
+       ClickEngine.stopTask(downloader);
     }
 
     //on save goes here
@@ -117,9 +120,9 @@ public class MyActivity extends Activity {
     {
     }
 //////////////////////////////////////////////////////////////////////////////////inner class async demo/background thread
-    private class GenDownloader extends AsyncTask<CharSequence,CharSequence,CharSequence>
+    protected class GenDownloader extends AsyncTask<CharSequence,CharSequence,CharSequence>
     {
-        //for this to workc orrectly, it needs to implement the abstracted method+ following 4. not sure why the other 4 are not
+        //for this to work correctly, it needs to implement the abstracted method+ following 4. not sure why the other 4 are not
         //abstracted methods since they have nothing on asyncTask.java
 
         protected void onPreExecute()
@@ -155,24 +158,53 @@ public class MyActivity extends Activity {
             //called when cancelled
         }
 
-        ///////////////////////////////////////////////////////////////////////////////////clickable buttons
-        public void startDownloadT(View derView)
-        {
-
-        }
-
-        public void stopDownloadT(View view)
-        {
-
-        }
 
     }
+
+    ///////////////////////////////////////////////////////////////////////////////////clickable buttons
+    public void startDownloadT(View derView)
+    {
+        //ui update call
+        setUIR(true);
+        downloader = new GenDownloader();
+        ClickEngine.startTask(urlTextTest.getText(),downloader);
+        statusTextTest.setText("started download of" +urlTextTest.getText());
+    }
+
+    public void stopDownloadT(View view)
+    {
+
+        ClickEngine.stopTask(downloader);
+        setUIR(false);
+        statusTextTest.setText(statusTextTest.getText()+" was stopped by the user");
+    }
+////////////////////////////////////////////////////// other methods
+
+    /**
+     *
+     * @param isRunning if it is running disable buttons or enable buttons
+     */
+    private void setUIR(boolean isRunning)
+    {
+        downloadButton.setEnabled(!isRunning);
+        stopButton.setEnabled(isRunning);
+
+        //progress bar set its state to visible if running, invisible if not running
+        setProgressBarIndeterminateVisibility(isRunning);
+        //if running is true, then set visible else invisible
+        progressBarTest.setVisibility(isRunning?View.VISIBLE:View.INVISIBLE);
+
+    }
+
+
+    ///////////////////////////////////////////////////////////////variables
 
     private EditText urlTextTest;
     private TextView statusTextTest;
     private Button downloadButton, stopButton;
     private ProgressBar progressBarTest;
     private GenDownloader downloader;
+
     private CheckBox goSlowCBX;
 
 }
