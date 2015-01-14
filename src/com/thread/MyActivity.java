@@ -1,11 +1,14 @@
 package com.thread;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.*;
 import android.widget.*;
 
+import javax.xml.transform.Result;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
@@ -37,6 +40,7 @@ public class MyActivity extends Activity {
 
     private CheckBox goSlow;*/
 
+
     }
 
     //on resume goes here
@@ -44,23 +48,51 @@ public class MyActivity extends Activity {
     public void onResume()
     {
         super.onResume();
+
+        SharedPreferences dahpref = this.getSharedPreferences("dahPref", Context.MODE_PRIVATE);
+        taskKilled = dahpref.getBoolean("restart",false);
+
+       if(taskKilled)
+       {
+           urlTextTest.setText(dahpref.getString("urlText","blah did not load"));
+           downloader = new GenDownloader();
+           ClickEngine.startTask(UrlCheck.isUrlCorrect(urlTextTest.getText()), downloader);
+           statusTextTest.setText("restarted download of" + urlTextTest.getText());
+       }
     }
 
     //on pause goes here
     @Override
     public void onPause()
     {
+
         super.onPause();
        ClickEngine.stopTask(downloader);
+
+        SharedPreferences dahpref = this.getSharedPreferences("dahPref", Context.MODE_PRIVATE);
+        SharedPreferences.Editor ads = dahpref.edit();
+                ads.putString("urlText", urlTextTest.getText().toString());
+                ads.putBoolean("restart",taskKilled);
+                ads.commit();
+        statusTextTest.setText("Android OS killed the task automatically");
+
     }
 
+    //recreate an activity
     //on save goes here
     @Override
     public void onSaveInstanceState(Bundle outSaveState)
     {
+        outSaveState.putString("urlText", String.valueOf(urlTextTest.getText()));
+
         super.onSaveInstanceState(outSaveState);
     }
 
+    @Override
+    public void onRestoreInstanceState(Bundle savedInstanceState)
+    {
+            urlTextTest.setText(savedInstanceState.getString("urlText"));
+    }
     //on destroy goes here
     public void  onDestroy()
     {
@@ -123,6 +155,7 @@ public class MyActivity extends Activity {
     // @Override
     public void onDestroyActionMode(ActionMode mode)
     {
+        //
     }
 //////////////////////////////////////////////////////////////////////////////////inner class async demo/background thread
     protected class GenDownloader extends AsyncTask<CharSequence,CharSequence,CharSequence>
@@ -152,66 +185,75 @@ public class MyActivity extends Activity {
             long startTime = System.currentTimeMillis();
             long lastT = startTime;
 
-            //Thrown when a waiting thread is activated before the condition it was waiting for has been satisfied.
-            try
-            {
-                URL derUrl = new URL(urlParams[0].toString());
-                URLConnection connectInternet = derUrl.openConnection();
-                connectInternet.setConnectTimeout(1000);
-                connectInternet.connect();
 
-                inStream = connectInternet.getInputStream();
-
-                //read and discard counter
-                byte[] readBuffer = new byte[1024];
-                int length;
-
-                while ((length = inStream.read(readBuffer,0,readBuffer.length))!= -1)
-                {
-                    tSize+= length;
-                    long rightnow = System.currentTimeMillis();
-                    //to slow down internet connection
-                    if(goSlow)
-                    {
-                        Thread.sleep(100);
-                    }
-
-                    //update the ui
-                    if((rightnow -lastT) >= 250)
-                    {
-                        publishProgress(ClickEngine.textStatus(tSize,rightnow-startTime));
-                    }
-                    stat ="done loading";
-                }
-            }
-            catch(InterruptedException ex)
-            {
-                stat= "there was the following interruption: "+ ex.getMessage();
-            }
-            catch (IOException ex)
-            {
-                stat= "there was the following network error: " + ex.getMessage();
-
-            }
-            catch(SecurityException ex)
-            {
-                stat="there was a security execption" + ex.getMessage();
-            }
-            finally
-            {
+                //Thrown when a waiting thread is activated before the condition it was waiting for has been satisfied.
                 try
                 {
-                    if(inStream != null)
+
+                    URL derUrl = new URL(urlParams[0].toString());
+                    URLConnection connectInternet = derUrl.openConnection();
+                    connectInternet.setConnectTimeout(1000);
+                    connectInternet.connect();
+
+                    inStream = connectInternet.getInputStream();
+
+                    //read and discard counter
+                    byte[] readBuffer = new byte[1024];
+                    int length;
+
+
+                    while ((length = inStream.read(readBuffer, 0, readBuffer.length)) != -1)
                     {
-                        inStream.close();
+
+                        tSize += length;
+                        long rightnow = System.currentTimeMillis();
+                        //to slow down internet connection
+                        if (goSlow)
+                        {
+                            Thread.sleep(100);
+                        }
+
+                        //update the ui based on time passed
+                        if ((rightnow - lastT) >= 250)
+                        {
+                            publishProgress(ClickEngine.textStatus(tSize, rightnow - startTime));
+                        }
+                        stat = "done loading";
                     }
+                }
+                catch (InterruptedException ex)
+                {
+                    stat = "there was the following interruption: " + ex.getMessage();
+                    errorInRead = true;
+                }
+                catch (IOException ex)
+                {
+                    stat = "there was the following network error: " + ex.getMessage();
+                    errorInRead =true;
 
                 }
-                catch (IOException ignore)
+                catch (SecurityException ex)
                 {
-                    stat= "Network error occurred when closing : " + ignore.getMessage();
+                    stat = "there was a security execption" + ex.getMessage();
+                    errorInRead = true;
                 }
-            }
+                finally
+                {
+                    try
+                    {
+                        if (inStream != null)
+                        {
+                            inStream.close();
+                        }
+
+                    }
+                    catch (IOException ignore)
+                    {
+                        stat = "Network error occurred when closing : " + ignore.getMessage();
+                        errorInRead = true;
+                    }
+                }
+
 
             if (stat.equals("done loading"))
             {
@@ -241,17 +283,34 @@ public class MyActivity extends Activity {
             setUIR(false);
             statusTextTest.setText(status);
             downloader =null;
+            if(errorInRead)
+            {
+                taskKilled = true;
+            }
+            else
+            {
+                taskKilled = false;
+            }
+
         }
 
-        protected void onCancelled()
+        protected void onCancelled(CharSequence status)
         {
-         statusTextTest.setText("was cancelled");
+         statusTextTest.setText("was cancelled" + status);
          downloader = null;
+            if(btnStop)
+            {
+                taskKilled = false;
+            }
+            else
+            {
+                taskKilled =true;
+            }
             //called when cancelled
         }
         //to slow connection speed
         private boolean goSlow;
-
+        private boolean errorInRead;
     }
 
     ///////////////////////////////////////////////////////////////////////////////////clickable buttons
@@ -262,6 +321,7 @@ public class MyActivity extends Activity {
         downloader = new GenDownloader();
         ClickEngine.startTask(UrlCheck.isUrlCorrect(urlTextTest.getText()),downloader);
         statusTextTest.setText("started download of" +urlTextTest.getText());
+        taskKilled = true; //to handle onPause
     }
 
     public void stopDownloadT(View view)
@@ -270,6 +330,18 @@ public class MyActivity extends Activity {
         ClickEngine.stopTask(downloader);
         setUIR(false);
         statusTextTest.setText(statusTextTest.getText()+" was stopped by the user");
+        taskKilled = false;
+        btnStop = true;
+    }
+
+    public void eraseMe(View view)
+    {
+        String data = urlTextTest.getText().toString();
+        if(data.equals("site URL"))
+        {
+            urlTextTest.setText("");
+        }
+
     }
 ////////////////////////////////////////////////////// other methods
 
@@ -297,6 +369,8 @@ public class MyActivity extends Activity {
     private Button downloadButton, stopButton;
     private ProgressBar progressBarTest;
     private GenDownloader downloader;
+
+    protected boolean taskKilled,btnStop = false;
 
     private CheckBox goSlowCBX;
 

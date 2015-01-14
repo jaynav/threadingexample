@@ -8,7 +8,7 @@
     <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New CheckBox"
+            android:text="@string/goSlow"
             android:id="@+id/checkBox" android:layout_weight="1"/>
     <ProgressBar
             android:layout_width="wrap_content"
@@ -17,22 +17,29 @@
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/editText" android:layout_gravity="center_vertical" android:layout_weight="1"/>
+            android:id="@+id/editText"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/siteName" android:onClick="eraseMe"/>
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/button" android:layout_gravity="bottom" android:onClick="startDownloadT"/>
+            android:text="@string/startRead"
+            android:id="@+id/button"
+            android:layout_gravity="bottom"
+            android:onClick="startDownloadT"/>
     <Button
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Button"
-            android:id="@+id/button2" android:layout_gravity="bottom" android:onClick="stopDownloadT"/>
+            android:text="@string/stopRead"
+            android:id="@+id/button2"
+            android:layout_gravity="bottom"
+            android:onClick="stopDownloadT"/>
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New Text"
+            android:text="@string/status"
             android:id="@+id/textView"
             android:layout_gravity="bottom"/>
 

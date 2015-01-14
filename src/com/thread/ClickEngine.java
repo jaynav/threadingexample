@@ -12,6 +12,7 @@ public class ClickEngine
 
         //runs async execute which calls doinbackground
         downloader.execute(text);
+
     }
     
 
@@ -36,8 +37,10 @@ public class ClickEngine
         {
             timePassed = 1;
         }
-        return "read:"+size+" bytes"+ "at"+(size*1000)/(1*1024)+"Kbps";
+        return "read: "+size+" bytes "+ "at: "+(((size*8)/1000)/timePassed)+"Kbps";
+
     }
+
 
 
 }

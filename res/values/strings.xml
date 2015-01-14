@@ -3,4 +3,9 @@
     <string name="app_name">threadingexample</string>
     <string name="actionBar_settings">Settings</string>
     <string name="contextMenuRemove">Remove</string>
+    <string name="goSlow">SlowSpeed?</string>
+    <string name="siteName">site URL</string>
+    <string name="startRead">Start</string>
+    <string name="stopRead">Stop</string>
+    <string name="status">Status:Ready</string>
 </resources>
