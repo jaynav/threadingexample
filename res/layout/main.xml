@@ -5,15 +5,26 @@
               android:orientation="vertical">
 
     <!--add buttons and stuff-->
-    <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/goSlow"
-            android:id="@+id/checkBox" android:layout_weight="1"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_weight="1">
+        <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="makeToService?"
+                android:id="@+id/cbxService" android:layout_weight="1"/>
+        <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/goSlow"
+                android:id="@+id/checkBox" android:layout_weight="1"/>
+    </LinearLayout>
     <ProgressBar
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/progressBar" android:layout_weight="1"/>
+            android:id="@+id/progressBar" android:layout_weight="1" android:indeterminate="false"
+            />
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -21,21 +32,24 @@
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
             android:text="@string/siteName" android:onClick="eraseMe"/>
-    <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/startRead"
-            android:id="@+id/button"
-            android:layout_gravity="bottom"
-            android:onClick="startDownloadT"/>
-    <Button
-            style="?android:attr/buttonStyleSmall"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/stopRead"
-            android:id="@+id/button2"
-            android:layout_gravity="bottom"
-            android:onClick="stopDownloadT"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_weight="1">
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/startRead"
+                android:id="@+id/button"
+                android:onClick="startDownloadT"/>
+        <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/stopRead"
+                android:id="@+id/button2"
+                android:onClick="stopDownloadT"/>
+    </LinearLayout>
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

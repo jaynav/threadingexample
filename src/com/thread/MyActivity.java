@@ -34,6 +34,12 @@ public class MyActivity extends Activity {
         stopButton = (Button)findViewById(R.id.button2);
        progressBarTest = (ProgressBar)findViewById(R.id.progressBar);
         goSlowCBX = (CheckBox)findViewById(R.id.checkBox);
+        serviceCBX = (CheckBox)findViewById(R.id.cbxService);
+
+
+        //
+//        set value of starting progress bar
+        progressBarTest.setVisibility(View.INVISIBLE);
         /*
 
     private ProgressBar progressBarTest;
@@ -195,6 +201,7 @@ public class MyActivity extends Activity {
                     connectInternet.setConnectTimeout(1000);
                     connectInternet.connect();
 
+
                     inStream = connectInternet.getInputStream();
 
                     //read and discard counter
@@ -319,9 +326,19 @@ public class MyActivity extends Activity {
         //ui update call
         setUIR(true);
         downloader = new GenDownloader();
-        ClickEngine.startTask(UrlCheck.isUrlCorrect(urlTextTest.getText()),downloader);
-        statusTextTest.setText("started download of" +urlTextTest.getText());
-        taskKilled = true; //to handle onPause
+        //if not checked start async task if checked start as service
+        //may also implement wakelock/wifilock forkeeping devices running
+        if(!serviceCBX.isChecked())
+        {
+            //some logic hidden in different class to start async task. too much stuff here
+            ClickEngine.startTask(UrlCheck.isUrlCorrect(urlTextTest.getText()), downloader);
+            statusTextTest.setText("started download of" + urlTextTest.getText());
+            taskKilled = true; //to handle onPause
+        }
+        else
+        {
+            //todo: add service code here
+        }
     }
 
     public void stopDownloadT(View view)
@@ -373,5 +390,6 @@ public class MyActivity extends Activity {
     protected boolean taskKilled,btnStop = false;
 
     private CheckBox goSlowCBX;
+    private CheckBox  serviceCBX;
 
 }
