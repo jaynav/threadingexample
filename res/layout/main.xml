@@ -13,17 +13,23 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="makeToService?"
-                android:id="@+id/cbxService" android:layout_weight="1"/>
+                android:id="@+id/cbxService"
+                android:layout_weight="1"
+                android:checked="false"
+                android:onClick="dasServicer"/>
         <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/goSlow"
-                android:id="@+id/checkBox" android:layout_weight="1"/>
+                android:id="@+id/checkBox"
+                android:layout_weight="1"/>
     </LinearLayout>
     <ProgressBar
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/progressBar" android:layout_weight="1" android:indeterminate="false"
+            android:id="@+id/progressBar"
+            android:layout_weight="1"
+            android:indeterminate="false"
             />
     <EditText
             android:layout_width="wrap_content"
@@ -31,11 +37,14 @@
             android:id="@+id/editText"
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
-            android:text="@string/siteName" android:onClick="eraseMe"/>
+            android:text="@string/siteName"
+            android:onClick="eraseMe"/>
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_weight="1">
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1">
         <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

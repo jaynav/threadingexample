@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/threadingexample.iml" filepath="$PROJECT_DIR$/threadingexample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/threadexmpl.iml" filepath="$PROJECT_DIR$/threadexmpl.iml" />
     </modules>
   </component>
 </project>
