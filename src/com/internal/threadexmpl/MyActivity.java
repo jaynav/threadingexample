@@ -396,7 +396,17 @@ public class MyActivity extends Activity {
         {
             msgServicer = new Messenger(service);
             mBound = true;
+            try
+            {
+                Message msg = Message.obtain(null, exampServ.Msg_Register);
+                msg.replyTo = mMessenger;
+                msgServicer.send(msg);
+            }
 
+            catch (RemoteException theE)
+            {
+                Toast.makeText(getApplicationContext(),theE.toString(), Toast.LENGTH_SHORT).show();
+            }
         }
 
         @Override
@@ -412,7 +422,18 @@ public class MyActivity extends Activity {
     {
         @Override
         public void handleMessage(Message msg)
-        {}
+        {
+            switch (msg.what)
+            {
+                case exampServ.Msg_Set_Val:
+                String derString = msg.getData().getString(StringValues.bdlString);
+                    statusTextTest.setText(derString +"was loaded");
+                    break;
+                default:
+                    super.handleMessage(msg);
+
+            }
+        }
     }
 
 

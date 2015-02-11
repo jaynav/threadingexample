@@ -4,15 +4,15 @@ package com.internal.threadexmpl;
  * Created by DerpPC on 2/7/2015.
  */
 
+import android.app.NotificationManager;
 import android.app.Service;
 import android.content.Intent;
-import android.os.IBinder;
+import android.os.*;
 
-import android.os.Message;
-import android.os.Messenger;
-import android.os.Handler;
 import android.util.Log;
 import android.widget.Toast;
+
+import java.util.ArrayList;
 
 
 /**
@@ -27,8 +27,32 @@ public class exampServ extends Service
     {
         super.onCreate();
         Log.i("msgr", "started service der");
+        hyperSetter();
 
     }
+
+    private void hyperSetter()
+    {
+        for(int i=messengerClients.size()-1;i>0;i--)
+        {
+
+            try
+            {
+                Bundle bdl = new Bundle();
+                bdl.putString(StringValues.bdlString, "derp" + "some value to add here");
+                Message msg = Message.obtain(null, Msg_Set_Val);
+                msg.setData(bdl);
+
+                messengerClients.get(i).send(msg);
+            }
+
+            catch (RemoteException e)
+            {
+                e.printStackTrace();
+            }
+        }
+    }
+
     @Override
     public int onStartCommand(Intent theStartedIntent, int theFlags, int startingId)
     {
@@ -61,6 +85,11 @@ public class exampServ extends Service
                 case Msg_Register:
                     //todo: add stuff
                     Toast.makeText(getApplicationContext(),"registered",Toast.LENGTH_SHORT).show();
+                    messengerClients.add(daMessage.replyTo);
+                    break;
+                case Msg_UnRT:
+                    Toast.makeText(getApplicationContext(),"unregistered", Toast.LENGTH_SHORT).show();
+                    messengerClients.remove(daMessage.replyTo);
                     break;
                 default:
                     super.handleMessage(daMessage);
@@ -73,4 +102,9 @@ public class exampServ extends Service
 
     //Commands to the service to display
     static final int Msg_Register = 1;
+    static final int Msg_UnRT= 2;
+    static final int Msg_Set_Val = 3;
+
+
+    ArrayList<Messenger> messengerClients = new ArrayList<Messenger>();
 }

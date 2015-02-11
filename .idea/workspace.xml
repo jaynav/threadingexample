@@ -30,34 +30,67 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MyActivity.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MyActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/internal/threadexmpl/MyActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="7463">
-              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.68770224" vertical-offset="2414" max-vertical-offset="3502">
+              <caret line="430" column="26" selection-start-line="430" selection-start-column="26" selection-end-line="430" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="docComment;method#onCreate#0;class#MyActivity#0" expanded="false" />
+                <element signature="method#onResume#0;class#MyActivity#0" expanded="false" />
+                <element signature="method#onPause#0;class#MyActivity#0" expanded="false" />
+                <element signature="method#onSaveInstanceState#0;class#MyActivity#0" expanded="false" />
+                <element signature="method#onRestoreInstanceState#0;class#MyActivity#0" expanded="false" />
+                <element signature="method#onCreateOptionsMenu#0;class#MyActivity#0" expanded="false" />
+                <element signature="method#onOptionsItemSelected#0;class#MyActivity#0" expanded="false" />
+                <element signature="method#onCreateActionMode#0;class#MyActivity#0" expanded="false" />
+                <element signature="method#onActionItemClicked#0;class#MyActivity#0" expanded="false" />
+                <element signature="method#onDestroyActionMode#0;class#MyActivity#0" expanded="false" />
+                <element signature="class#GenDownloader#0;class#MyActivity#0" expanded="false" />
+                <element signature="method#startDownloadT#0;class#MyActivity#0" expanded="false" />
+                <element signature="method#stopDownloadT#0;class#MyActivity#0" expanded="false" />
+                <element signature="method#eraseMe#0;class#MyActivity#0" expanded="false" />
+                <element signature="docComment;method#setUIR#0;class#MyActivity#0" expanded="false" />
+                <element signature="method#setUIR#0;class#MyActivity#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <file leaf-file-name="main.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.302589" vertical-offset="0" max-vertical-offset="618">
-              <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+            <state vertical-scroll-proportion="-6.2909093" vertical-offset="759" max-vertical-offset="1309">
+              <caret line="65" column="32" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
+              <folding>
+                <element signature="e#2705#2721#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StringValues.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/internal/threadexmpl/StringValues.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contextual_action_mode.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/menu/contextual_action_mode.xml">
+      <file leaf-file-name="exampServ.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/internal/threadexmpl/exampServ.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="255">
-              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="367" max-vertical-offset="1785">
+              <caret line="41" column="52" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
+              <folding>
+                <element signature="e#2768#2779#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -67,8 +100,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/internal/threadexmpl/MyActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/internal/threadexmpl/exampServ.java" />
         <option value="$PROJECT_DIR$/src/com/internal/threadexmpl/Setter.java" />
         <option value="$PROJECT_DIR$/src/com/internal/threadexmpl/ClickEngine.java" />
         <option value="$PROJECT_DIR$/src/com/internal/threadexmpl/UrlCheck.java" />
@@ -76,6 +107,9 @@
         <option value="$PROJECT_DIR$/res/menu/main.xml" />
         <option value="$PROJECT_DIR$/res/menu/contextual_action_mode.xml" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/com/internal/threadexmpl/StringValues.java" />
+        <option value="$PROJECT_DIR$/src/com/internal/threadexmpl/exampServ.java" />
+        <option value="$PROJECT_DIR$/src/com/internal/threadexmpl/MyActivity.java" />
       </list>
     </option>
   </component>
@@ -108,7 +142,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -158,28 +191,6 @@
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threadexmpl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threadexmpl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="menu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -199,98 +210,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threadexmpl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threadexmpl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable-xhdpi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threadexmpl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threadexmpl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable-mdpi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threadexmpl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threadexmpl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable-ldpi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threadexmpl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threadexmpl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable-hdpi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threadexmpl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threadexmpl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gen" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="threadexmpl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -510,7 +432,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1376" height="754" extended-state="0" />
+    <frame x="-8" y="-8" width="1376" height="754" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -522,8 +444,11 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972136" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" x="92" y="92" width="1176" height="554" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48088235" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -533,13 +458,11 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1983871" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -560,7 +483,9 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -570,10 +495,68 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/internal/threadexmpl/MyActivity.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="7463">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#onCreate#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onResume#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onPause#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onSaveInstanceState#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onRestoreInstanceState#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onCreateActionMode#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onActionItemClicked#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onDestroyActionMode#0;class#MyActivity#0" expanded="false" />
+            <element signature="class#GenDownloader#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#startDownloadT#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#stopDownloadT#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#eraseMe#0;class#MyActivity#0" expanded="false" />
+            <element signature="docComment;method#setUIR#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#setUIR#0;class#MyActivity#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/menu/contextual_action_mode.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="255">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/internal/threadexmpl/MyActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7463">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="docComment;method#onCreate#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onResume#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onPause#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onSaveInstanceState#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onRestoreInstanceState#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onCreateActionMode#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onActionItemClicked#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onDestroyActionMode#0;class#MyActivity#0" expanded="false" />
+            <element signature="class#GenDownloader#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#startDownloadT#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#stopDownloadT#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#eraseMe#0;class#MyActivity#0" expanded="false" />
+            <element signature="docComment;method#setUIR#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#setUIR#0;class#MyActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -592,6 +575,22 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="docComment;method#onCreate#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onResume#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onPause#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onSaveInstanceState#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onRestoreInstanceState#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onCreateActionMode#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onActionItemClicked#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onDestroyActionMode#0;class#MyActivity#0" expanded="false" />
+            <element signature="class#GenDownloader#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#startDownloadT#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#stopDownloadT#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#eraseMe#0;class#MyActivity#0" expanded="false" />
+            <element signature="docComment;method#setUIR#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#setUIR#0;class#MyActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -610,6 +609,22 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="docComment;method#onCreate#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onResume#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onPause#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onSaveInstanceState#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onRestoreInstanceState#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onCreateActionMode#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onActionItemClicked#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onDestroyActionMode#0;class#MyActivity#0" expanded="false" />
+            <element signature="class#GenDownloader#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#startDownloadT#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#stopDownloadT#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#eraseMe#0;class#MyActivity#0" expanded="false" />
+            <element signature="docComment;method#setUIR#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#setUIR#0;class#MyActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -640,24 +655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21794872" vertical-offset="0" max-vertical-offset="546">
           <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33271718" vertical-offset="92" max-vertical-offset="1309">
-          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
-          <folding>
-            <element signature="e#1017#1033#0" expanded="false" />
-            <element signature="e#1658#1676#0" expanded="false" />
-            <element signature="e#2121#2140#0" expanded="false" />
-            <element signature="e#2438#2456#0" expanded="false" />
-            <element signature="e#2705#2721#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -668,20 +665,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/internal/threadexmpl/exampServ.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26677853" vertical-offset="708" max-vertical-offset="1343">
-          <caret line="54" column="5" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/menu/main.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.37638375" vertical-offset="0" max-vertical-offset="542">
           <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-          <folding>
-            <element signature="e#276#304#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -699,14 +686,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/menu/contextual_action_mode.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="255">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gen/com/internal/threadexmpl/BuildConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
@@ -714,13 +693,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/internal/threadexmpl/MyActivity.java">
+    <entry file="file://$PROJECT_DIR$/res/menu/contextual_action_mode.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="7463">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.22934233" vertical-offset="0" max-vertical-offset="593">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -729,6 +706,63 @@
         <state vertical-scroll-proportion="0.302589" vertical-offset="0" max-vertical-offset="618">
           <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/internal/threadexmpl/exampServ.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="367" max-vertical-offset="1785">
+          <caret line="41" column="52" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
+          <folding>
+            <element signature="e#2768#2779#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/internal/threadexmpl/StringValues.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.2909093" vertical-offset="759" max-vertical-offset="1309">
+          <caret line="65" column="32" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
+          <folding>
+            <element signature="e#2705#2721#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/internal/threadexmpl/MyActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.68770224" vertical-offset="2414" max-vertical-offset="3502">
+          <caret line="430" column="26" selection-start-line="430" selection-start-column="26" selection-end-line="430" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#onCreate#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onResume#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onPause#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onSaveInstanceState#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onRestoreInstanceState#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onCreateActionMode#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onActionItemClicked#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onDestroyActionMode#0;class#MyActivity#0" expanded="false" />
+            <element signature="class#GenDownloader#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#startDownloadT#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#stopDownloadT#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#eraseMe#0;class#MyActivity#0" expanded="false" />
+            <element signature="docComment;method#setUIR#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#setUIR#0;class#MyActivity#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
