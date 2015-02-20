@@ -1,10 +1,8 @@
 package com.internal.threadexmpl;
 import android.app.Activity;
-import android.content.ComponentName;
-import android.content.Context;
-import android.content.ServiceConnection;
-import android.content.SharedPreferences;
+import android.content.*;
 import android.os.*;
+import android.text.Editable;
 import android.view.*;
 import android.widget.*;
 
@@ -336,8 +334,34 @@ public class MyActivity extends Activity {
         }
         else
         {
-            //todo: add service code here
+            startService(new Intent(MyActivity.this, exampServ.class));
+            sendMessage(urlTextTest.getText());
         }
+    }
+
+    private void sendMessage(CharSequence urlText)
+    {
+        if(mBound)
+        {
+            if(msgServicer !=null)
+            {
+                try
+                {
+                    Bundle bun = StringValues.bundleMaker(urlText);
+                //Bundle bun=  StringValues.bMaker(urlText);
+                    Message msg = Message.obtain(null, StringValues.Msg_Set_Val);
+                    msg.setData(bun);
+                    msgServicer.send(msg);
+                }
+                catch (RemoteException ex)
+                {
+
+                    Toast.makeText(getApplicationContext(),ex.toString(),Toast.LENGTH_SHORT).show();
+
+                }
+            }
+        }
+
     }
 
     public void stopDownloadT(View view)
@@ -398,7 +422,7 @@ public class MyActivity extends Activity {
             mBound = true;
             try
             {
-                Message msg = Message.obtain(null, exampServ.Msg_Register);
+                Message msg = Message.obtain(null, StringValues.Msg_Register);
                 msg.replyTo = mMessenger;
                 msgServicer.send(msg);
             }
@@ -425,7 +449,7 @@ public class MyActivity extends Activity {
         {
             switch (msg.what)
             {
-                case exampServ.Msg_Set_Val:
+                case StringValues.Msg_Set_Val:
                 String derString = msg.getData().getString(StringValues.bdlString);
                     statusTextTest.setText(derString +"was loaded");
                     break;

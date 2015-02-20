@@ -27,20 +27,22 @@ public class exampServ extends Service
     {
         super.onCreate();
         Log.i("msgr", "started service der");
-        hyperSetter();
+     // check first
+     //   hyperSetter();
 
     }
 
-    private void hyperSetter()
+   /** private void hyperSetter()
     {
         for(int i=messengerClients.size()-1;i>0;i--)
         {
 
             try
             {
+    todo: retrieve data logic and send back results
                 Bundle bdl = new Bundle();
                 bdl.putString(StringValues.bdlString, "derp" + "some value to add here");
-                Message msg = Message.obtain(null, Msg_Set_Val);
+                Message msg = Message.obtain(null, StringValues.Msg_Set_Val);
                 msg.setData(bdl);
 
                 messengerClients.get(i).send(msg);
@@ -52,7 +54,7 @@ public class exampServ extends Service
             }
         }
     }
-
+*/
     @Override
     public int onStartCommand(Intent theStartedIntent, int theFlags, int startingId)
     {
@@ -82,14 +84,16 @@ public class exampServ extends Service
         {
             switch (daMessage.what)
             {
-                case Msg_Register:
-                    //todo: add stuff
+                case StringValues.Msg_Register:
                     Toast.makeText(getApplicationContext(),"registered",Toast.LENGTH_SHORT).show();
                     messengerClients.add(daMessage.replyTo);
                     break;
-                case Msg_UnRT:
+                case StringValues.Msg_UnRT:
                     Toast.makeText(getApplicationContext(),"unregistered", Toast.LENGTH_SHORT).show();
                     messengerClients.remove(daMessage.replyTo);
+                    break;
+                case StringValues.Msg_Set_Val:
+                   // todo: retrieve data logic
                     break;
                 default:
                     super.handleMessage(daMessage);
@@ -100,10 +104,6 @@ public class exampServ extends Service
     //target for clients to send messages to incoming handler
     final Messenger dasMessenger = new Messenger(new InboundHandler());
 
-    //Commands to the service to display
-    static final int Msg_Register = 1;
-    static final int Msg_UnRT= 2;
-    static final int Msg_Set_Val = 3;
 
 
     ArrayList<Messenger> messengerClients = new ArrayList<Messenger>();
