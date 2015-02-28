@@ -26,9 +26,5 @@ public class StringValues
         return bn;
     }
 
-    /*public static <typeofBundle> Bundle bMaker(typeofBundle txt)
-    {
-        return null;
-    }
-    */
+
 }

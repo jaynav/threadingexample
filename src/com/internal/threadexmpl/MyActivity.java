@@ -348,7 +348,7 @@ public class MyActivity extends Activity {
                 try
                 {
                     Bundle bun = StringValues.bundleMaker(urlText);
-                //Bundle bun=  StringValues.bMaker(urlText);
+
                     Message msg = Message.obtain(null, StringValues.Msg_Set_Val);
                     msg.setData(bun);
                     msgServicer.send(msg);

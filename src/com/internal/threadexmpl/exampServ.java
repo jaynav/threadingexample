@@ -93,7 +93,7 @@ public class exampServ extends Service
                     messengerClients.remove(daMessage.replyTo);
                     break;
                 case StringValues.Msg_Set_Val:
-                   // todo: retrieve data logic
+                  derUrl = UrlCheck.isUrlCorrect(daMessage.getData().getString(StringValues.bdlString));
                     break;
                 default:
                     super.handleMessage(daMessage);
@@ -107,4 +107,5 @@ public class exampServ extends Service
 
 
     ArrayList<Messenger> messengerClients = new ArrayList<Messenger>();
+    protected CharSequence derUrl;
 }
