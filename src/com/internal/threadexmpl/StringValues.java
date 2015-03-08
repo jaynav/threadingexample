@@ -7,10 +7,7 @@ import android.os.Bundle;
  */
 public class StringValues
 {
-    //Commands to the service to display
-    static final int Msg_Register = 1;
-    static final int Msg_UnRT= 2;
-    static final int Msg_Set_Val = 3;
+
 
     public  static String bdlString = "str1";
 

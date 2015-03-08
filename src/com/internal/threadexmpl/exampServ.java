@@ -27,18 +27,10 @@ public class exampServ extends Service
     {
         super.onCreate();
         Log.i("msgr", "started service der");
-     // check first
-     //   hyperSetter();
 
     }
 
-   /** private void hyperSetter()
-    {
-        for(int i=messengerClients.size()-1;i>0;i--)
-        {
-
-            try
-            {
+   /**
     todo: retrieve data logic and send back results
                 Bundle bdl = new Bundle();
                 bdl.putString(StringValues.bdlString, "derp" + "some value to add here");
@@ -84,15 +76,12 @@ public class exampServ extends Service
         {
             switch (daMessage.what)
             {
-                case StringValues.Msg_Register:
+                case Msg_Register:
                     Toast.makeText(getApplicationContext(),"registered",Toast.LENGTH_SHORT).show();
-                    messengerClients.add(daMessage.replyTo);
+
                     break;
-                case StringValues.Msg_UnRT:
-                    Toast.makeText(getApplicationContext(),"unregistered", Toast.LENGTH_SHORT).show();
-                    messengerClients.remove(daMessage.replyTo);
-                    break;
-                case StringValues.Msg_Set_Val:
+
+                case Msg_Set_Val:
                   derUrl = UrlCheck.isUrlCorrect(daMessage.getData().getString(StringValues.bdlString));
                     break;
                 default:
@@ -108,4 +97,9 @@ public class exampServ extends Service
 
     ArrayList<Messenger> messengerClients = new ArrayList<Messenger>();
     protected CharSequence derUrl;
+
+    //Commands to the service to display
+    static final int Msg_Register = 1;
+
+    static final int Msg_Set_Val = 3;
 }

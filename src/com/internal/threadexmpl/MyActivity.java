@@ -34,14 +34,8 @@ public class MyActivity extends Activity {
         serviceCBX = (CheckBox)findViewById(R.id.cbxService);
 
 
-        //
-//        set value of starting progress bar
+        // set value of starting progress bar
         progressBarTest.setVisibility(View.INVISIBLE);
-        /*
-
-    private ProgressBar progressBarTest;
-
-    private CheckBox goSlow;*/
 
 
     }
@@ -77,7 +71,7 @@ public class MyActivity extends Activity {
         ads.putString("urlText", urlTextTest.getText().toString());
         ads.putBoolean("restart",taskKilled);
         ads.commit();
-        statusTextTest.setText("Android OS killed the task automatically");
+        statusTextTest.setText("Android OS paused the task automatically");
 
     }
 
@@ -100,6 +94,8 @@ public class MyActivity extends Activity {
     public void  onDestroy()
     {
         super.onDestroy();
+        statusTextTest.setText("task was killed by Android");
+
     }
 /////////////////////////////////////////////////////////////////////action bar/context menu/action mode
 
@@ -317,53 +313,6 @@ public class MyActivity extends Activity {
         private boolean errorInRead;
     }
 
-    ///////////////////////////////////////////////////////////////////////////////////clickable buttons
-    public void startDownloadT(View derView)
-    {
-        //ui update call
-        setUIR(true);
-        downloader = new GenDownloader();
-        //if not checked start async task if checked start as service
-        //may also implement wakelock/wifilock forkeeping devices running
-        if(!Setter.getValue())
-        {
-            //some logic hidden in different class to start async task. too much stuff here
-            ClickEngine.startTask(UrlCheck.isUrlCorrect(urlTextTest.getText()), downloader);
-            statusTextTest.setText("started download of" + urlTextTest.getText());
-            taskKilled = true; //to handle onPause
-        }
-        else
-        {
-            startService(new Intent(MyActivity.this, exampServ.class));
-            sendMessage(urlTextTest.getText());
-        }
-    }
-
-    private void sendMessage(CharSequence urlText)
-    {
-        if(mBound)
-        {
-            if(msgServicer !=null)
-            {
-                try
-                {
-                    Bundle bun = StringValues.bundleMaker(urlText);
-
-                    Message msg = Message.obtain(null, StringValues.Msg_Set_Val);
-                    msg.setData(bun);
-                    msgServicer.send(msg);
-                }
-                catch (RemoteException ex)
-                {
-
-                    Toast.makeText(getApplicationContext(),ex.toString(),Toast.LENGTH_SHORT).show();
-
-                }
-            }
-        }
-
-    }
-
     public void stopDownloadT(View view)
     {
 
@@ -411,36 +360,54 @@ public class MyActivity extends Activity {
         progressBarTest.setVisibility(isRunning?View.VISIBLE:View.INVISIBLE);
 
     }
+
+    ///////////////////////////////////////////////////////////////////////////////////clickable buttons
+    public void startDownloadT(View derView)
+    {
+        //ui update call
+        setUIR(true);
+        downloader = new GenDownloader();
+        //if not checked start async task if checked start as service
+        //may also implement wakelock/wifilock forkeeping devices running
+        if(!Setter.getValue())
+        {
+            //some logic hidden in different class to start async task. too much stuff here
+            ClickEngine.startTask(UrlCheck.isUrlCorrect(urlTextTest.getText()), downloader);
+            statusTextTest.setText("started download of" + urlTextTest.getText());
+            taskKilled = true; //to handle onPause
+        }
+        else
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {
+
+
+        }
+    }
+
+
+
 //////////////////////////////////////////////////////////////////////////////the service
 
-    private ServiceConnection mConnect = new ServiceConnection()
-    {
-        @Override
-        public void onServiceConnected(ComponentName name, IBinder service)
-        {
-            msgServicer = new Messenger(service);
-            mBound = true;
-            try
-            {
-                Message msg = Message.obtain(null, StringValues.Msg_Register);
-                msg.replyTo = mMessenger;
-                msgServicer.send(msg);
-            }
 
-            catch (RemoteException theE)
-            {
-                Toast.makeText(getApplicationContext(),theE.toString(), Toast.LENGTH_SHORT).show();
-            }
-        }
 
-        @Override
-        public void onServiceDisconnected(ComponentName name)
-        {
-            msgServicer = null;
-            mBound = false;
 
-        }
-    };
 
     private class IncomingHandler extends Handler
     {
@@ -449,7 +416,7 @@ public class MyActivity extends Activity {
         {
             switch (msg.what)
             {
-                case StringValues.Msg_Set_Val:
+                case exampServ.Msg_Set_Val:
                 String derString = msg.getData().getString(StringValues.bdlString);
                     statusTextTest.setText(derString +"was loaded");
                     break;
