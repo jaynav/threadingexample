@@ -2,7 +2,6 @@ package com.internal.threadexmpl;
 import android.app.Activity;
 import android.content.*;
 import android.os.*;
-import android.text.Editable;
 import android.view.*;
 import android.widget.*;
 
@@ -29,13 +28,13 @@ public class MyActivity extends Activity {
         statusTextTest= (TextView)findViewById(R.id.textView);
         downloadButton = (Button)findViewById(R.id.button);
         stopButton = (Button)findViewById(R.id.button2);
-        progressBarTest = (ProgressBar)findViewById(R.id.progressBar);
+       // progressBarTest = (ProgressBar)findViewById(R.id.progressBar);
         goSlowCBX = (CheckBox)findViewById(R.id.checkBox);
         serviceCBX = (CheckBox)findViewById(R.id.cbxService);
 
 
         // set value of starting progress bar
-        progressBarTest.setVisibility(View.INVISIBLE);
+      //  progressBarTest.setVisibility(View.INVISIBLE);
 
 
     }
@@ -119,43 +118,7 @@ public class MyActivity extends Activity {
         }
     }
 
-    //////////////////////////////////////////////////////////context menu/actionMode
-    public boolean onItemLongClick(AdapterView<?> view,View row, int position, long id)
-    {
-        return  true;
-    }
 
-    //@Override
-    public boolean onCreateActionMode(ActionMode mode, Menu menu)
-    {
-        mode.getMenuInflater().inflate(R.menu.contextual_action_mode, menu);
-        mode.setTitle("edit");
-        return true;
-    }
-
-    //@Override
-    public boolean onPrepareActionMode(ActionMode mode, Menu menu)
-    {
-        return false;
-    }
-
-    //  @Override
-    public boolean onActionItemClicked(ActionMode mode, MenuItem item)
-    {
-        switch (item.getItemId())
-        {
-            case R.id.contextualAction_remove:
-                return true;
-            default:
-                return false;
-        }
-    }
-
-    // @Override
-    public void onDestroyActionMode(ActionMode mode)
-    {
-        //
-    }
     //////////////////////////////////////////////////////////////////////////////////inner class async demo/background thread
     protected class GenDownloader extends AsyncTask<CharSequence,CharSequence,CharSequence>
     {
@@ -321,6 +284,7 @@ public class MyActivity extends Activity {
         statusTextTest.setText(statusTextTest.getText()+" was stopped by the user");
         taskKilled = false;
         btnStop = true;
+
     }
 
     public void eraseMe(View view)
@@ -355,77 +319,67 @@ public class MyActivity extends Activity {
         stopButton.setEnabled(isRunning);
 
         //progress bar set its state to visible if running, invisible if not running
-        setProgressBarIndeterminateVisibility(isRunning);
+      //  setProgressBarIndeterminateVisibility(isRunning);
         //if running is true, then set visible else invisible
-        progressBarTest.setVisibility(isRunning?View.VISIBLE:View.INVISIBLE);
+      //  progressBarTest.setVisibility(isRunning?View.VISIBLE:View.INVISIBLE);
 
     }
 
     ///////////////////////////////////////////////////////////////////////////////////clickable buttons
-    public void startDownloadT(View derView)
-    {
+    public void startDownloadT(View derView) {
         //ui update call
         setUIR(true);
         downloader = new GenDownloader();
         //if not checked start async task if checked start as service
         //may also implement wakelock/wifilock forkeeping devices running
-        if(!Setter.getValue())
-        {
+        if (!Setter.getValue()) {
             //some logic hidden in different class to start async task. too much stuff here
             ClickEngine.startTask(UrlCheck.isUrlCorrect(urlTextTest.getText()), downloader);
             statusTextTest.setText("started download of" + urlTextTest.getText());
             taskKilled = true; //to handle onPause
         }
-        else
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        {
-
-
-        }
     }
 
 
 
-//////////////////////////////////////////////////////////////////////////////the service
-
-
-
-
-
-    private class IncomingHandler extends Handler
+    //////////////////////////////////////////////////////////context menu/actionMode
+    public boolean onItemLongClick(AdapterView<?> view,View row, int position, long id)
     {
-        @Override
-        public void handleMessage(Message msg)
-        {
-            switch (msg.what)
-            {
-                case exampServ.Msg_Set_Val:
-                String derString = msg.getData().getString(StringValues.bdlString);
-                    statusTextTest.setText(derString +"was loaded");
-                    break;
-                default:
-                    super.handleMessage(msg);
+        return  true;
+    }
 
-            }
+    //@Override
+    public boolean onCreateActionMode(ActionMode mode, Menu menu)
+    {
+        mode.getMenuInflater().inflate(R.menu.contextual_action_mode, menu);
+        mode.setTitle("edit");
+        return true;
+    }
+
+    //@Override
+    public boolean onPrepareActionMode(ActionMode mode, Menu menu)
+    {
+        return false;
+    }
+
+    //  @Override
+    public boolean onActionItemClicked(ActionMode mode, MenuItem item)
+    {
+        switch (item.getItemId())
+        {
+            case R.id.contextualAction_remove:
+                return true;
+            default:
+                return false;
         }
     }
+
+    // @Override
+    public void onDestroyActionMode(ActionMode mode)
+    {
+        //
+    }
+
 
 
 
@@ -434,20 +388,13 @@ public class MyActivity extends Activity {
     private EditText urlTextTest;
     private TextView statusTextTest;
     private Button downloadButton, stopButton;
-    private ProgressBar progressBarTest;
+   // private ProgressBar progressBarTest;
     private GenDownloader downloader;
 
     protected boolean taskKilled,btnStop = false;
 
     private CheckBox goSlowCBX;
     private CheckBox  serviceCBX;
-
-    //messenger for communicating with the service
-    Messenger msgServicer= null;
-    // Flag indicating whether we have called bind on the service.
-    boolean mBound;
-    //handling incoming messages
-    final Messenger mMessenger = new Messenger(new IncomingHandler());
 
 
 

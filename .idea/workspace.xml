@@ -10,8 +10,17 @@
   </component>
   <component name="AndroidLayouts">
     <shared>
-      <config />
+      <config>
+        <target>android-21</target>
+      </config>
     </shared>
+    <layouts>
+      <layout url="file://$PROJECT_DIR$/res/layout/main.xml">
+        <config>
+          <theme>@android:style/Theme.Holo</theme>
+        </config>
+      </layout>
+    </layouts>
   </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: com.internal.threadexmpl" />
@@ -44,38 +53,23 @@
       <file leaf-file-name="MyActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/internal/threadexmpl/MyActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3041237" vertical-offset="2305" max-vertical-offset="3196">
-              <caret line="418" column="36" selection-start-line="418" selection-start-column="36" selection-end-line="418" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.69787985" vertical-offset="2189" max-vertical-offset="3043">
+              <caret line="380" column="5" selection-start-line="380" selection-start-column="5" selection-end-line="380" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="docComment;method#onCreate#0;class#MyActivity#0" expanded="false" />
-                <element signature="method#onCreate#0;class#MyActivity#0" expanded="false" />
                 <element signature="method#onResume#0;class#MyActivity#0" expanded="false" />
                 <element signature="method#onPause#0;class#MyActivity#0" expanded="false" />
                 <element signature="method#onSaveInstanceState#0;class#MyActivity#0" expanded="false" />
+                <element signature="method#onRestoreInstanceState#0;class#MyActivity#0" expanded="false" />
                 <element signature="method#onDestroy#0;class#MyActivity#0" expanded="false" />
                 <element signature="method#onCreateOptionsMenu#0;class#MyActivity#0" expanded="false" />
                 <element signature="method#onOptionsItemSelected#0;class#MyActivity#0" expanded="false" />
+                <element signature="class#GenDownloader#0;class#MyActivity#0" expanded="false" />
+                <element signature="method#eraseMe#0;class#MyActivity#0" expanded="false" />
                 <element signature="method#onCreateActionMode#0;class#MyActivity#0" expanded="false" />
                 <element signature="method#onActionItemClicked#0;class#MyActivity#0" expanded="false" />
                 <element signature="method#onDestroyActionMode#0;class#MyActivity#0" expanded="false" />
-                <element signature="class#GenDownloader#0;class#MyActivity#0" expanded="false" />
-                <element signature="method#stopDownloadT#0;class#MyActivity#0" expanded="false" />
-                <element signature="method#eraseMe#0;class#MyActivity#0" expanded="false" />
-                <element signature="method#dasServicer#0;class#MyActivity#0" expanded="false" />
-                <element signature="method#setUIR#0;class#MyActivity#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="exampServ.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/internal/threadexmpl/exampServ.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1103" max-vertical-offset="1700">
-              <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-              <folding>
-                <element signature="e#2380#2391#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,16 +88,16 @@
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/com/internal/threadexmpl/UrlCheck.java" />
         <option value="$PROJECT_DIR$/src/com/internal/threadexmpl/StringValues.java" />
-        <option value="$PROJECT_DIR$/src/com/internal/threadexmpl/MyActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/src/com/internal/threadexmpl/exampServ.java" />
+        <option value="$PROJECT_DIR$/src/com/internal/threadexmpl/MyActivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1376" />
-    <option name="height" value="754" />
+    <option name="x" value="680" />
+    <option name="width" value="680" />
+    <option name="height" value="738" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -407,6 +401,11 @@
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SliceManager">
+    <option name="analysisUIOptions">
+      <AnalysisUIOptions />
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -440,38 +439,38 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1376" height="754" extended-state="6" />
+    <frame x="680" y="0" width="680" height="738" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905295" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32423756" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32744783" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="0" y="95" width="1170" height="548" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3360791" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32744783" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34189406" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25455928" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35584843" sideWeight="0.6706783" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.538715" sideWeight="0.4428773" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32744783" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32423756" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="0" y="95" width="1170" height="548" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18389058" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33443162" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32744783" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32263243" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5354839" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35584843" sideWeight="0.6706783" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.06581059" sideWeight="0.4428773" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24696049" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -492,7 +491,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="83" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/internal/threadexmpl/MyActivity.java</url>
+          <line>334</line>
+          <properties />
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="88" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -508,52 +515,39 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#onCreate#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onCreate#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onResume#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onPause#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onSaveInstanceState#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onRestoreInstanceState#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onDestroy#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#MyActivity#0" expanded="false" />
+            <element signature="class#GenDownloader#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#eraseMe#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onCreateActionMode#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onActionItemClicked#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onDestroyActionMode#0;class#MyActivity#0" expanded="false" />
-            <element signature="class#GenDownloader#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#stopDownloadT#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#eraseMe#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#dasServicer#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#setUIR#0;class#MyActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="759" max-vertical-offset="1309">
           <caret line="65" column="32" selection-start-line="65" selection-start-column="32" selection-end-line="65" selection-end-column="32" />
           <folding>
-            <element signature="e#1658#1676#0" expanded="false" />
+            <element signature="e#1665#1683#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/internal/threadexmpl/StringValues.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="272">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/internal/threadexmpl/exampServ.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="367" max-vertical-offset="1785">
-          <caret line="41" column="52" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
-          <folding>
-            <element signature="e#2380#2391#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -564,21 +558,18 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#onCreate#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onCreate#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onResume#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onPause#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onSaveInstanceState#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onRestoreInstanceState#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onDestroy#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#MyActivity#0" expanded="false" />
+            <element signature="class#GenDownloader#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#eraseMe#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onCreateActionMode#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onActionItemClicked#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onDestroyActionMode#0;class#MyActivity#0" expanded="false" />
-            <element signature="class#GenDownloader#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#stopDownloadT#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#eraseMe#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#dasServicer#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#setUIR#0;class#MyActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -605,21 +596,18 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#onCreate#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onCreate#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onResume#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onPause#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onSaveInstanceState#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onRestoreInstanceState#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onDestroy#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#MyActivity#0" expanded="false" />
+            <element signature="class#GenDownloader#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#eraseMe#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onCreateActionMode#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onActionItemClicked#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onDestroyActionMode#0;class#MyActivity#0" expanded="false" />
-            <element signature="class#GenDownloader#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#stopDownloadT#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#eraseMe#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#dasServicer#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#setUIR#0;class#MyActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -638,21 +626,18 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#onCreate#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onCreate#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onResume#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onPause#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onSaveInstanceState#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onRestoreInstanceState#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onDestroy#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#MyActivity#0" expanded="false" />
+            <element signature="class#GenDownloader#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#eraseMe#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onCreateActionMode#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onActionItemClicked#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onDestroyActionMode#0;class#MyActivity#0" expanded="false" />
-            <element signature="class#GenDownloader#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#stopDownloadT#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#eraseMe#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#dasServicer#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#setUIR#0;class#MyActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -671,21 +656,18 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#onCreate#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onCreate#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onResume#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onPause#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onSaveInstanceState#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onRestoreInstanceState#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onDestroy#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#MyActivity#0" expanded="false" />
+            <element signature="class#GenDownloader#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#eraseMe#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onCreateActionMode#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onActionItemClicked#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onDestroyActionMode#0;class#MyActivity#0" expanded="false" />
-            <element signature="class#GenDownloader#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#stopDownloadT#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#eraseMe#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#dasServicer#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#setUIR#0;class#MyActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -744,19 +726,6 @@
         <state vertical-scroll-proportion="0.302589" vertical-offset="0" max-vertical-offset="618">
           <caret line="11" column="37" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0363636" vertical-offset="386" max-vertical-offset="1309">
-          <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
-          <folding>
-            <element signature="e#1658#1676#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -908,47 +877,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-21/android/os/Looper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5559211" vertical-offset="1922" max-vertical-offset="4675">
-          <caret line="140" column="66" selection-start-line="140" selection-start-column="66" selection-end-line="140" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-21/android/os/Handler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27900553" vertical-offset="1361" max-vertical-offset="12393">
-          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-21/android/view/View.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27900553" vertical-offset="325279" max-vertical-offset="346188">
-          <caret line="19749" column="0" selection-start-line="19749" selection-start-column="0" selection-end-line="19749" selection-end-column="0" />
-          <folding>
-            <element signature="e#767478#767479#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/internal/threadexmpl/Setter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65217394" vertical-offset="0" max-vertical-offset="408">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <element signature="e#322#323#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-21/android/app/ActivityThread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5104712" vertical-offset="85026" max-vertical-offset="85408">
           <caret line="5220" column="0" selection-start-line="5220" selection-start-column="0" selection-end-line="5220" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -956,7 +888,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21518987" vertical-offset="68" max-vertical-offset="561">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -964,42 +895,78 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.31699347" vertical-offset="1042" max-vertical-offset="6698">
           <caret line="98" column="0" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/main.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.72" vertical-offset="51" max-vertical-offset="1309">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
+          <folding>
+            <element signature="e#1665#1683#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/internal/threadexmpl/Setter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/internal/threadexmpl/exampServ.java">
+    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-21/android/view/View.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1103" max-vertical-offset="1700">
-          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="325279" max-vertical-offset="346188">
+          <caret line="19749" column="0" selection-start-line="19749" selection-start-column="0" selection-end-line="19749" selection-end-column="0" />
           <folding>
-            <element signature="e#2380#2391#0" expanded="true" />
+            <element signature="e#767478#767479#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-21/android/os/Looper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1922" max-vertical-offset="4675">
+          <caret line="136" column="0" selection-start-line="136" selection-start-column="0" selection-end-line="136" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Android/android-sdk/sources/android-21/android/os/Handler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1361" max-vertical-offset="12427">
+          <caret line="101" column="31" selection-start-line="101" selection-start-column="31" selection-end-line="101" selection-end-column="31" />
+          <folding>
+            <element signature="e#29666#29667#0" expanded="true" />
+            <element signature="e#29704#29705#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/internal/threadexmpl/MyActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3041237" vertical-offset="2305" max-vertical-offset="3196">
-          <caret line="418" column="36" selection-start-line="418" selection-start-column="36" selection-end-line="418" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.69787985" vertical-offset="2189" max-vertical-offset="3043">
+          <caret line="380" column="5" selection-start-line="380" selection-start-column="5" selection-end-line="380" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="docComment;method#onCreate#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onCreate#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onResume#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onPause#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onSaveInstanceState#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#onRestoreInstanceState#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onDestroy#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#MyActivity#0" expanded="false" />
+            <element signature="class#GenDownloader#0;class#MyActivity#0" expanded="false" />
+            <element signature="method#eraseMe#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onCreateActionMode#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onActionItemClicked#0;class#MyActivity#0" expanded="false" />
             <element signature="method#onDestroyActionMode#0;class#MyActivity#0" expanded="false" />
-            <element signature="class#GenDownloader#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#stopDownloadT#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#eraseMe#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#dasServicer#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#setUIR#0;class#MyActivity#0" expanded="false" />
           </folding>
         </state>
       </provider>
