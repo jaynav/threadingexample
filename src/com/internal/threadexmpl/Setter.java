@@ -8,6 +8,7 @@ public class Setter
 
     protected static boolean serviceValue = false;
 
+    protected static final String Extra_Row = "rowID";
     protected static void setValue(boolean value)
     {
         serviceValue = value;

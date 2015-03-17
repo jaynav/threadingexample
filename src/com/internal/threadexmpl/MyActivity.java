@@ -332,11 +332,17 @@ public class MyActivity extends Activity {
         downloader = new GenDownloader();
         //if not checked start async task if checked start as service
         //may also implement wakelock/wifilock forkeeping devices running
-        if (!Setter.getValue()) {
+        if (!Setter.getValue())
+        {
             //some logic hidden in different class to start async task. too much stuff here
             ClickEngine.startTask(UrlCheck.isUrlCorrect(urlTextTest.getText()), downloader);
             statusTextTest.setText("started download of" + urlTextTest.getText());
             taskKilled = true; //to handle onPause
+        }
+        else
+        {
+           Intent dahIntent = new Intent(this,MessengerTest.class).putExtra(Setter.Extra_Row, UrlCheck.isUrlCorrect(urlTextTest.getText()));
+            startActivity(dahIntent);
         }
     }
 
