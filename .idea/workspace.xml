@@ -55,14 +55,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MessengerTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MessengerTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/internal/threadexmpl/MessengerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.85714287" vertical-offset="1632" max-vertical-offset="2295">
-              <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="2601">
+              <caret line="66" column="13" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/internal/threadexmpl/MyActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.66019416" vertical-offset="459" max-vertical-offset="6766">
+              <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -73,8 +81,18 @@
             <state />
           </provider>
           <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.96" vertical-offset="0" max-vertical-offset="493">
+            <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="493">
               <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessenServ.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/internal/threadexmpl/MessenServ.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="1020">
+              <caret line="45" column="23" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -92,12 +110,12 @@
         <option value="$PROJECT_DIR$/src/com/internal/threadexmpl/UrlCheck.java" />
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/src/com/internal/threadexmpl/exampServ.java" />
-        <option value="$PROJECT_DIR$/src/com/internal/threadexmpl/MessenServ.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/com/internal/threadexmpl/StringValues.java" />
         <option value="$PROJECT_DIR$/src/com/internal/threadexmpl/Setter.java" />
         <option value="$PROJECT_DIR$/src/com/internal/threadexmpl/MyActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/messenger_test.xml" />
+        <option value="$PROJECT_DIR$/src/com/internal/threadexmpl/MessenServ.java" />
         <option value="$PROJECT_DIR$/src/com/internal/threadexmpl/MessengerTest.java" />
       </list>
     </option>
@@ -217,7 +235,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="FullScreen" value="false" />
-    <property name="last_opened_file_path" value="C:/Program Files (x86)/Android/android-sdk/samples/android-21/legacy/ApiDemos/src/com/example/android/apis/app/MessengerServiceActivities.java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="options.lastSelected" value="editor.preferences.appearance" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -459,31 +477,31 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32744783" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33113673" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3261944" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3253205" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="55" y="95" width="1115" height="548" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18389058" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33443162" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32744783" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32263243" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18465045" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18455882" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35584843" sideWeight="0.6706783" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.538715" sideWeight="0.4428773" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.538715" sideWeight="0.4428773" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972136" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="55" y="95" width="1115" height="548" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18389058" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33443162" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -505,7 +523,39 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="89" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/internal/threadexmpl/MessengerTest.java</url>
+          <line>132</line>
+          <properties />
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/internal/threadexmpl/MessengerTest.java</url>
+          <line>136</line>
+          <properties />
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/internal/threadexmpl/MessenServ.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/internal/threadexmpl/MessenServ.java</url>
+          <line>42</line>
+          <properties />
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/internal/threadexmpl/MyActivity.java</url>
+          <line>51</line>
+          <properties />
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="97" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -514,6 +564,17 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/res/layout/messenger_test.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="493">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
@@ -532,23 +593,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7463">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#onCreate#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onResume#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onPause#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onSaveInstanceState#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onRestoreInstanceState#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onDestroy#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onCreateOptionsMenu#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#MyActivity#0" expanded="false" />
-            <element signature="class#GenDownloader#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#eraseMe#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#dasServicer#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onCreateActionMode#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onActionItemClicked#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onDestroyActionMode#0;class#MyActivity#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -563,23 +607,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7463">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#onCreate#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onResume#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onPause#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onSaveInstanceState#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onRestoreInstanceState#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onDestroy#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onCreateOptionsMenu#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#MyActivity#0" expanded="false" />
-            <element signature="class#GenDownloader#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#eraseMe#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#dasServicer#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onCreateActionMode#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onActionItemClicked#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onDestroyActionMode#0;class#MyActivity#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -594,23 +621,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7616">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#onCreate#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onResume#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onPause#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onSaveInstanceState#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onRestoreInstanceState#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onDestroy#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onCreateOptionsMenu#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#MyActivity#0" expanded="false" />
-            <element signature="class#GenDownloader#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#eraseMe#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#dasServicer#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onCreateActionMode#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onActionItemClicked#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onDestroyActionMode#0;class#MyActivity#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -786,7 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.26973686" vertical-offset="139726" max-vertical-offset="154836">
           <caret line="8560" column="0" selection-start-line="8560" selection-start-column="0" selection-end-line="8560" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -829,7 +838,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.06007067" vertical-offset="0" max-vertical-offset="566">
           <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -840,26 +848,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://C:/Program Files (x86)/Android/android-sdk/samples/android-21/legacy/ApiDemos/src/com/example/android/apis/app/MessengerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6131148" vertical-offset="1887" max-vertical-offset="2737">
-          <caret line="147" column="26" selection-start-line="147" selection-start-column="26" selection-end-line="147" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Program Files (x86)/Android/android-sdk/samples/android-21/legacy/ApiDemos/src/com/example/android/apis/app/MessengerServiceActivities.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30327868" vertical-offset="2076" max-vertical-offset="2686">
-          <caret line="151" column="42" selection-start-line="151" selection-start-column="42" selection-end-line="151" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/internal/threadexmpl/ClickEngine.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.09010601" vertical-offset="204" max-vertical-offset="884">
           <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -868,10 +860,10 @@
         <state vertical-scroll-proportion="0.22857143" vertical-offset="0" max-vertical-offset="595">
           <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
           <folding>
-            <element signature="e#261#262#0" expanded="true" />
-            <element signature="e#297#298#0" expanded="true" />
-            <element signature="e#342#343#0" expanded="true" />
-            <element signature="e#377#378#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="false" />
+            <element signature="e#297#298#0" expanded="false" />
+            <element signature="e#342#343#0" expanded="false" />
+            <element signature="e#377#378#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -880,7 +872,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.667227" vertical-offset="100629" max-vertical-offset="126973">
           <caret line="5861" column="18" selection-start-line="5861" selection-start-column="18" selection-end-line="5861" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -888,31 +879,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33277312" vertical-offset="6" max-vertical-offset="629">
           <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/internal/threadexmpl/MyActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0" vertical-offset="1852" max-vertical-offset="2992">
-          <caret line="343" column="101" selection-start-line="343" selection-start-column="101" selection-end-line="343" selection-end-column="101" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="docComment;method#onCreate#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onResume#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onPause#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onSaveInstanceState#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onRestoreInstanceState#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onDestroy#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onCreateOptionsMenu#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#MyActivity#0" expanded="false" />
-            <element signature="class#GenDownloader#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#eraseMe#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#dasServicer#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onCreateActionMode#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onActionItemClicked#0;class#MyActivity#0" expanded="false" />
-            <element signature="method#onDestroyActionMode#0;class#MyActivity#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -927,14 +893,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/internal/threadexmpl/MessenServ.java">
+    <entry file="file://C:/Program Files (x86)/Android/android-sdk/samples/android-21/legacy/ApiDemos/src/com/example/android/apis/app/MessengerService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6" vertical-offset="629" max-vertical-offset="1224">
-          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#588#599#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="2.7032788" vertical-offset="0" max-vertical-offset="2414">
+          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files (x86)/Android/android-sdk/samples/android-21/legacy/ApiDemos/src/com/example/android/apis/app/MessengerServiceActivities.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3590164" vertical-offset="1940" max-vertical-offset="2550">
+          <caret line="153" column="20" selection-start-line="153" selection-start-column="20" selection-end-line="153" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -943,19 +912,33 @@
         <state />
       </provider>
       <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.96" vertical-offset="0" max-vertical-offset="493">
+        <state vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="493">
           <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/internal/threadexmpl/MessenServ.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="130" max-vertical-offset="1122">
+          <caret line="45" column="23" selection-start-line="45" selection-start-column="23" selection-end-line="45" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/internal/threadexmpl/MessengerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.85714287" vertical-offset="1632" max-vertical-offset="2295">
-          <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="742" max-vertical-offset="2856">
+          <caret line="66" column="13" selection-start-line="66" selection-start-column="13" selection-end-line="66" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/internal/threadexmpl/MyActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66019416" vertical-offset="459" max-vertical-offset="6766">
+          <caret line="60" column="13" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>

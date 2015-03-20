@@ -94,7 +94,29 @@ public class MessengerTest extends Activity
     }
 
     public void unBindServ()
-    {}
+    {
+        if(mIsB)
+        {
+            if(mServ != null)
+            {
+                try
+                {
+                    Message ms = Message.obtain(null,MessenServ.MSG_Un);
+                    ms.replyTo = mMessenger;
+                    mServ.send(ms);
+                }
+                catch (RemoteException excp)
+                {
+                    excp.printStackTrace();
+                }
+            }
+            //detach service
+            unbindService(mConnect);
+            mIsB = false;
+            Toast.makeText(getApplicationContext(),"disconnected from servic",Toast.LENGTH_LONG).show();
+        }
+
+    }
 
 
     @Override
@@ -124,6 +146,17 @@ public class MessengerTest extends Activity
     }
     public void startService(View view)
     {
+        if(!binderAgo)
+        {
+            bindServ();
+            binderAgo= true;
+        }
+        else
+        {
+            unBindServ();
+            binderAgo = false;
+        }
 
     }
+    boolean binderAgo= false;
 }

@@ -62,8 +62,13 @@ public class MessenServ extends Service
 
     @Override
     public  void onCreate()
-    {}
+    {
+        Toast.makeText(getApplicationContext(),"I started messenserv", Toast.LENGTH_SHORT).show();
+    }
     @Override
     public void onDestroy()
-    {}
+    {
+        Toast.makeText(this,"service STopped",Toast.LENGTH_LONG).show();
+    }
+
 }
