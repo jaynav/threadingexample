@@ -38,7 +38,7 @@ public class MessengerTest extends Activity
             switch (msg.what)
             {
                 case MessenServ.MSG_Set_V:
-                    Toast.makeText(getApplicationContext(), "got it from service" + msg.arg1, Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "I got this from service" + msg.arg1, Toast.LENGTH_LONG).show();
                     break;
                 default:
                     super.handleMessage(msg);
@@ -91,7 +91,35 @@ public class MessengerTest extends Activity
         bindService(new Intent(this,MessenServ.class),mConnect,Context.BIND_AUTO_CREATE);
         mIsB = true;
         Toast.makeText(getApplicationContext(),"binding now",Toast.LENGTH_SHORT).show();
+
+        sendServiceData(siteName);
+
     }
+
+    protected void sendServiceData(String siteName)
+    {
+        if(mIsB)
+        {
+            if (mServ!=null)
+            {
+                try
+                {
+
+                    Message ms = Message.obtain(null,MessenServ.MSG_Set_V);
+                    Bundle dahBun = new Bundle();
+                    dahBun.putString(Setter.URLValue,siteName);
+                    ms.setData(dahBun);
+                    mServ.send(ms);
+
+                }
+                catch (RemoteException fail)
+                {
+                    fail.printStackTrace();
+                }
+            }
+        }
+    }
+
 
     public void unBindServ()
     {
