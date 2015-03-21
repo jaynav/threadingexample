@@ -15,7 +15,9 @@ import android.util.Log;
 import android.view.View;
 
 ;
+import android.widget.TextView;
 import android.widget.Toast;
+import org.w3c.dom.Text;
 
 /**
  * Created by DerpPC on 3/17/2015.
@@ -24,6 +26,7 @@ public class MessengerTest extends Activity
 {
     Messenger mServ= null;
     boolean mIsB;
+    TextView txxt1, txxt2;
     //for getting value from intent
     String siteName;
     private static final String Save_Row = "saverow";
@@ -37,8 +40,21 @@ public class MessengerTest extends Activity
         {
             switch (msg.what)
             {
+                case MessenServ.MSG_Reg:
+
+                    //sends value prior to registering callback handle it after it comes back
+                    if(msg.arg1 ==1)
+                    {
+                        txxt1.setText("mahvalue is" +msg.arg1);
+
+                        sendServiceData(siteName);
+                    }
+
+
                 case MessenServ.MSG_Set_V:
-                    Toast.makeText(getApplicationContext(), "I got this from service" + msg.arg1, Toast.LENGTH_LONG).show();
+
+
+                    txxt2.setText(msg.getData().getString(Setter.URLValue));
                     break;
                 default:
                     super.handleMessage(msg);
@@ -86,13 +102,8 @@ public class MessengerTest extends Activity
     protected void bindServ()
     {
 
-
-
         bindService(new Intent(this,MessenServ.class),mConnect,Context.BIND_AUTO_CREATE);
         mIsB = true;
-        Toast.makeText(getApplicationContext(),"binding now",Toast.LENGTH_SHORT).show();
-
-        sendServiceData(siteName);
 
     }
 
@@ -141,7 +152,7 @@ public class MessengerTest extends Activity
             //detach service
             unbindService(mConnect);
             mIsB = false;
-            Toast.makeText(getApplicationContext(),"disconnected from servic",Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),"disconnected from service",Toast.LENGTH_LONG).show();
         }
 
     }
@@ -152,7 +163,8 @@ public class MessengerTest extends Activity
     {
         super.onCreate(savedInState);
         setContentView(R.layout.messenger_test);
-
+        txxt1 = (TextView)findViewById(R.id.txt1);
+        txxt2 = (TextView)findViewById(R.id.txt2);
         if(savedInState== null)
         {
             Bundle xtra = getIntent().getExtras();
@@ -178,6 +190,8 @@ public class MessengerTest extends Activity
         {
             bindServ();
             binderAgo= true;
+
+
         }
         else
         {
